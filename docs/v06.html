@@ -20,7 +20,7 @@
         }
         function dec2bin (decimal){
             //first refinement: lazy lazy way to finding binary
-            //version of decimal input-we just look up in a list
+            //version of decimal input-we just look it up in a list
             binary=["0000","0001","0010","0011",
                     "0100","0101","0110","0111",
                    "1000","1001"]
@@ -41,9 +41,10 @@
                 quotient = Math.floor(quotient/2)
             }
             while (output.lenth<4){output='0'+output}
-            //The above algorithm leaves off the leading zeros and fails conmpletely on //converting 0 base 10. To fix this we can "pad" the output with leading zeros 
-            //We will use a while loop (since we don't want any padding if the output is already //four digits) and a "method we add to any character string variable called length-
-            //it just report the length of the sting
+            //The above algorithm leaves off the leading zeros and fails completely on converting 0 base 10. 
+            //To fix this we can "pad" the output with leading zeros 
+            //We will use a while loop (since we don't want any padding if the output is already four digits) 
+            //and a "method" we add to any character string variable called length-it just report the length of the string
             return(output)
         }
     </script>
